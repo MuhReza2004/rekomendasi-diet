@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rekomendasi Diet Sehat</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1><i class="fas fa-heartbeat"></i> Rekomendasi Diet Sehat</h1>
+      <form id="diet-form">
+        <div class="input-group">
+          <label for="name"><i class="fas fa-user"></i> Nama:</label>
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="Masukkan nama Anda"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="age"><i class="fas fa-calendar-alt"></i> Usia:</label>
+          <input
+            type="number"
+            id="age"
+            required
+            placeholder="Masukkan usia Anda"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="weight"
+            ><i class="fas fa-weight"></i> Berat Badan (kg):</label
+          >
+          <input
+            type="number"
+            id="weight"
+            required
+            placeholder="Masukkan berat badan Anda"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="disease"
+            ><i class="fas fa-notes-medical"></i> Riwayat Penyakit:</label
+          >
+          <select id="disease" required>
+            <option value="">Pilih Penyakit</option>
+            <option value="diabetes">Diabetes</option>
+            <option value="hipertensi">Hipertensi</option>
+            <option value="kesulitan_menelan">Kesulitan Menelan</option>
+            <option value="kep">Kekurangan Energi Protein(KEP)</option>
+            <option value="gerd">Gastroesophageal Reflux Disease(GERD)</option>
+            <option value="diare">Diare</option>
+          </select>
+        </div>
+
+        <button type="submit">
+          <i class="fas fa-search"></i> Dapatkan Rekomendasi
+        </button>
+      </form>
+
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
