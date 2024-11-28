@@ -87,3 +87,10 @@ button:hover {
     transform: translateY(-50%);
     color: #95a5a6;
 }
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
+}
